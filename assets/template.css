@@ -1,0 +1,34 @@
+.app-header {
+    height: 60px;
+    line-height: 60px;
+    background-image: linear-gradient(to right, #0052D4 , #4364F7,#6FB1FC,#FFFFFF);
+    text-align: start;
+    padding-left: 12px
+}
+
+.app-header .app-header--title {
+    font-size: 22px;
+    padding-left: 5px;
+}
+
+
+
+.page-container {
+  position: relative;
+  min-height: 80vh;
+  width: 100%;
+}
+
+
+.app-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  background-image: linear-gradient(to right, #0052D4 , #4364F7,#6FB1FC,#FFFFFF);
+}
+
+
+.colored-hr{
+  color:blue
+}
