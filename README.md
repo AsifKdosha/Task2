@@ -10,6 +10,7 @@ The “assets” directory contain all the CSS files and recognized vid dash aut
 
 I used the following packages/frameworks(installation required):
 pandas,
+dash,
 dash_bootstarp_components,
 openpyxl.
 
