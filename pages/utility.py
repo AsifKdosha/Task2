@@ -13,7 +13,6 @@ def make_sales_main_df():
 
     # making a DF with total sale price (quatity * unit price) and the month of the deal and the branch
     sales_df=pd.DataFrame({'Month': df['Date'].dt.month_name(), 'Income': df['Unit price'] * df['Quantity'], 'Branch': df['Branch']})
-    sales_df.sort_values('Month', key = lambda x : x.apply (lambda x : month_dict[x]))
     return sales_df
 
 
@@ -38,7 +37,7 @@ def branches_page_data_and_figures(request):
         return sales_df['Income'].sum()
 
     if request=='pie_chart_figure':
-        fig = px.pie(sales_df.groupby('Branch', as_index=False).agg(Income=('Income', 'sum')).groupby('Branch', as_index=False).agg(Income=('Income', 'sum')),
+        fig = px.pie(sales_df.groupby('Branch', as_index=False).agg(Income=('Income', 'sum')),
             values='Income',
             names='Branch', height=400)
 
