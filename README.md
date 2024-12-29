@@ -14,5 +14,4 @@ dash,
 dash_bootstarp_components,
 openpyxl.
 
-Had a lot of fun! :)
 
